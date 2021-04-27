@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="a8a54282-e806-46fe-b96b-66af499ba3c3" name="daniloveltri@TI-1354 2021-04-26 22:03:18" runUser="CLSOFTWARE\daniloveltri" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2021-04-26T22:03:18.3977172-03:00" queuing="2021-04-26T22:03:18.3977182-03:00" start="2021-04-26T22:03:12.6781200-03:00" finish="2021-04-26T22:03:51.9590024-03:00" />
+  <TestSettings name="default" id="ca3ac961-91dc-44b1-aa8b-56be5a2d0f11">
+    <Deployment runDeploymentRoot="daniloveltri_TI-1354_2021-04-26_22_03_18" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="dcf494b0-e96a-4ded-b2aa-20fa6f6b3dca" testId="894a6627-f6d2-4442-c2b8-73842cb38d7d" testName="RealizarBuscaInvalidaPorCategoria" computerName="TI-1354" duration="00:00:04.1032140" startTime="2021-04-26T22:03:18.0000000-03:00" endTime="2021-04-26T22:03:22.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dcf494b0-e96a-4ded-b2aa-20fa6f6b3dca">
+      <Output>
+        <StdOut>Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.&#xD;
+Given que navego para a página de busca do banco de questões&#xD;
+-&gt; skipped because of previous errors&#xD;
+And digito no campo de busca e tipo de busca&#xD;
+  --- table step argument ---&#xD;
+  | busca               | tipobusca |&#xD;
+  | Science: Computerss | Category  |&#xD;
+-&gt; skipped because of previous errors&#xD;
+When clico no botão de buscar&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then busca não exibida category&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.WebDriverException : Cannot start the driver service on http://localhost:61795/</Message>
+          <StackTrace>   at OpenQA.Selenium.DriverService.Start()&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)&#xD;
+   at Infrastructure.DriverManagement.InitDriver() in C:\Trivia\Trivia\Trivia\DriverManagement.cs:line 16&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesSteps.TriviaPage() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoesSteps.cs:line 22&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.ScenarioCleanup()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.RealizarBuscaInvalidaPorCategoria() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoes.feature:line 59</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a5458867-09d9-4240-81a7-94716988c643" testId="f46d4173-d075-9e48-209e-e39b35e7d887" testName="RealizarBuscaInvalidaPorQuestao" computerName="TI-1354" duration="00:00:04.1352500" startTime="2021-04-26T22:03:22.0000000-03:00" endTime="2021-04-26T22:03:26.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5458867-09d9-4240-81a7-94716988c643">
+      <Output>
+        <StdOut>Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.&#xD;
+Given que navego para a página de busca do banco de questões&#xD;
+-&gt; skipped because of previous errors&#xD;
+And digito no campo de busca&#xD;
+  --- table step argument ---&#xD;
+  | busca                             |&#xD;
+  | What language does Node.js use??? |&#xD;
+-&gt; skipped because of previous errors&#xD;
+When clico no botão de buscar&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then busca não exibida question&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.WebDriverException : Cannot start the driver service on http://localhost:61803/</Message>
+          <StackTrace>   at OpenQA.Selenium.DriverService.Start()&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)&#xD;
+   at Infrastructure.DriverManagement.InitDriver() in C:\Trivia\Trivia\Trivia\DriverManagement.cs:line 16&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesSteps.TriviaPage() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoesSteps.cs:line 22&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.ScenarioCleanup()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.RealizarBuscaInvalidaPorQuestao() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoes.feature:line 39</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="809d738b-db94-40b5-84e4-14246e9a5043" testId="7bec5a10-6b62-b26f-8858-a50919e2bd33" testName="RealizarBuscaInvalidaPorUser" computerName="TI-1354" duration="00:00:04.1104680" startTime="2021-04-26T22:03:26.0000000-03:00" endTime="2021-04-26T22:03:30.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="809d738b-db94-40b5-84e4-14246e9a5043">
+      <Output>
+        <StdOut>Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.&#xD;
+Given que navego para a página de busca do banco de questões&#xD;
+-&gt; skipped because of previous errors&#xD;
+And digito no campo de busca e tipo de busca&#xD;
+  --- table step argument ---&#xD;
+  | busca  | tipobusca |&#xD;
+  | Karenn | User      |&#xD;
+-&gt; skipped because of previous errors&#xD;
+When clico no botão de buscar&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then busca não exibida user&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.WebDriverException : Cannot start the driver service on http://localhost:61814/</Message>
+          <StackTrace>   at OpenQA.Selenium.DriverService.Start()&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)&#xD;
+   at Infrastructure.DriverManagement.InitDriver() in C:\Trivia\Trivia\Trivia\DriverManagement.cs:line 16&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesSteps.TriviaPage() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoesSteps.cs:line 22&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.ScenarioCleanup()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.RealizarBuscaInvalidaPorUser() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoes.feature:line 79</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d2505677-ac3b-42c2-a3d1-00fda1da6c5a" testId="35d35759-0605-9f39-47eb-9c0852db69d4" testName="RealizarBuscaValidaPorUser" computerName="TI-1354" duration="00:00:04.1244020" startTime="2021-04-26T22:03:38.0000000-03:00" endTime="2021-04-26T22:03:43.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2505677-ac3b-42c2-a3d1-00fda1da6c5a">
+      <Output>
+        <StdOut>Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.&#xD;
+Given que navego para a página de busca do banco de questões&#xD;
+-&gt; skipped because of previous errors&#xD;
+And digito no campo de busca e tipo de busca&#xD;
+  --- table step argument ---&#xD;
+  | busca | tipobusca |&#xD;
+  | Karen | User      |&#xD;
+-&gt; skipped because of previous errors&#xD;
+When clico no botão de buscar&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then busca exibida com sucesso&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.WebDriverException : Cannot start the driver service on http://localhost:61842/</Message>
+          <StackTrace>   at OpenQA.Selenium.DriverService.Start()&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)&#xD;
+   at Infrastructure.DriverManagement.InitDriver() in C:\Trivia\Trivia\Trivia\DriverManagement.cs:line 16&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesSteps.TriviaPage() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoesSteps.cs:line 22&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.ScenarioCleanup()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.RealizarBuscaValidaPorUser() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoes.feature:line 69</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6296b773-1664-494e-8c97-2bd892b44140" testId="986e1f41-19f6-31a1-5168-cc5da7629a70" testName="BuscaPorQuestaoInexistente" computerName="TI-1354" duration="00:00:04.3910470" startTime="2021-04-26T22:03:13.0000000-03:00" endTime="2021-04-26T22:03:18.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6296b773-1664-494e-8c97-2bd892b44140">
+      <Output>
+        <StdOut>Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.&#xD;
+Given que navego para a página de busca do banco de questões&#xD;
+-&gt; skipped because of previous errors&#xD;
+And digito no campo de busca&#xD;
+  --- table step argument ---&#xD;
+  | busca              |&#xD;
+  | Science: Computers |&#xD;
+-&gt; skipped because of previous errors&#xD;
+When clico no botão de buscar&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then visualizo uma mensagem de erro com o texto 'No questions found.'&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.WebDriverException : Cannot start the driver service on http://localhost:61781/</Message>
+          <StackTrace>   at OpenQA.Selenium.DriverService.Start()&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)&#xD;
+   at Infrastructure.DriverManagement.InitDriver() in C:\Trivia\Trivia\Trivia\DriverManagement.cs:line 16&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesSteps.TriviaPage() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoesSteps.cs:line 22&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.ScenarioCleanup()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.BuscaPorQuestaoInexistente() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoes.feature:line 11</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="185d2482-1ec1-4bc8-8f98-bacf55937915" testId="b2616756-0a0f-bc32-24a6-eb7ac958bedc" testName="RealizarContagemDeListagem" computerName="TI-1354" duration="00:00:08.1515930" startTime="2021-04-26T22:03:43.0000000-03:00" endTime="2021-04-26T22:03:51.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="185d2482-1ec1-4bc8-8f98-bacf55937915">
+      <Output>
+        <StdOut>Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.&#xD;
+Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.&#xD;
+Given que navego para a página de busca do banco de questões&#xD;
+-&gt; skipped because of previous errors&#xD;
+And digito no campo de busca e tipo de busca&#xD;
+  --- table step argument ---&#xD;
+  | busca              | tipobusca |&#xD;
+  | Science: Computers | Category  |&#xD;
+-&gt; skipped because of previous errors&#xD;
+When clico no botão de buscar&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then contagem com sucesso&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.WebDriverException : Cannot start the driver service on http://localhost:61854/</Message>
+          <StackTrace>   at OpenQA.Selenium.DriverService.Start()&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)&#xD;
+   at Infrastructure.DriverManagement.InitDriver() in C:\Trivia\Trivia\Trivia\DriverManagement.cs:line 16&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesSteps.TriviaPage() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoesSteps.cs:line 22&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.ScenarioCleanup()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.RealizarContagemDeListagem() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoes.feature:line 20</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="070de1e5-237b-42b2-af1b-e89a6f4b9679" testId="b319a383-a4b1-f244-1fc0-155500f76cc8" testName="RealizarBuscaValidaPorQuestao" computerName="TI-1354" duration="00:00:04.0726880" startTime="2021-04-26T22:03:34.0000000-03:00" endTime="2021-04-26T22:03:38.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="070de1e5-237b-42b2-af1b-e89a6f4b9679">
+      <Output>
+        <StdOut>Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.&#xD;
+Given que navego para a página de busca do banco de questões&#xD;
+-&gt; skipped because of previous errors&#xD;
+And digito no campo de busca&#xD;
+  --- table step argument ---&#xD;
+  | busca                           |&#xD;
+  | What language does Node.js use? |&#xD;
+-&gt; skipped because of previous errors&#xD;
+When clico no botão de buscar&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then busca completa exibida com sucesso&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.WebDriverException : Cannot start the driver service on http://localhost:61834/</Message>
+          <StackTrace>   at OpenQA.Selenium.DriverService.Start()&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)&#xD;
+   at Infrastructure.DriverManagement.InitDriver() in C:\Trivia\Trivia\Trivia\DriverManagement.cs:line 16&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesSteps.TriviaPage() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoesSteps.cs:line 22&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.ScenarioCleanup()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.RealizarBuscaValidaPorQuestao() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoes.feature:line 29</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="85fdd34b-d65c-491b-a43d-6463a5d10563" testId="181b86bf-e851-9432-ddeb-ad6b3fd6f360" testName="RealizarBuscaValidaPorCategoria" computerName="TI-1354" duration="00:00:04.1239860" startTime="2021-04-26T22:03:30.0000000-03:00" endTime="2021-04-26T22:03:34.0000000-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="85fdd34b-d65c-491b-a43d-6463a5d10563">
+      <Output>
+        <StdOut>Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.&#xD;
+Given que navego para a página de busca do banco de questões&#xD;
+-&gt; skipped because of previous errors&#xD;
+And digito no campo de busca e tipo de busca&#xD;
+  --- table step argument ---&#xD;
+  | busca              | tipobusca |&#xD;
+  | Science: Computers | Category  |&#xD;
+-&gt; skipped because of previous errors&#xD;
+When clico no botão de buscar&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then busca exibida com sucesso&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>OpenQA.Selenium.WebDriverException : Cannot start the driver service on http://localhost:61821/</Message>
+          <StackTrace>   at OpenQA.Selenium.DriverService.Start()&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)&#xD;
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)&#xD;
+   at Infrastructure.DriverManagement.InitDriver() in C:\Trivia\Trivia\Trivia\DriverManagement.cs:line 16&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesSteps.TriviaPage() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoesSteps.cs:line 22&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.ScenarioCleanup()&#xD;
+   at Trivia.Tests.BuscanoBancodeQuestoesFeature.RealizarBuscaValidaPorCategoria() in C:\Trivia\Trivia\Trivia.Tests\BuscanoBancodeQuestoes.feature:line 49</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="RealizarBuscaValidaPorCategoria" storage="c:\trivia\trivia\trivia.tests\bin\debug\netcoreapp3.1\trivia.tests.dll" id="181b86bf-e851-9432-ddeb-ad6b3fd6f360">
+      <Execution id="85fdd34b-d65c-491b-a43d-6463a5d10563" />
+      <TestMethod codeBase="C:\Trivia\Trivia\Trivia.Tests\bin\Debug\netcoreapp3.1\Trivia.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Trivia.Tests.BuscanoBancodeQuestoesFeature" name="RealizarBuscaValidaPorCategoria" />
+    </UnitTest>
+    <UnitTest name="BuscaPorQuestaoInexistente" storage="c:\trivia\trivia\trivia.tests\bin\debug\netcoreapp3.1\trivia.tests.dll" id="986e1f41-19f6-31a1-5168-cc5da7629a70">
+      <Execution id="6296b773-1664-494e-8c97-2bd892b44140" />
+      <TestMethod codeBase="C:\Trivia\Trivia\Trivia.Tests\bin\Debug\netcoreapp3.1\Trivia.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Trivia.Tests.BuscanoBancodeQuestoesFeature" name="BuscaPorQuestaoInexistente" />
+    </UnitTest>
+    <UnitTest name="RealizarBuscaValidaPorUser" storage="c:\trivia\trivia\trivia.tests\bin\debug\netcoreapp3.1\trivia.tests.dll" id="35d35759-0605-9f39-47eb-9c0852db69d4">
+      <Execution id="d2505677-ac3b-42c2-a3d1-00fda1da6c5a" />
+      <TestMethod codeBase="C:\Trivia\Trivia\Trivia.Tests\bin\Debug\netcoreapp3.1\Trivia.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Trivia.Tests.BuscanoBancodeQuestoesFeature" name="RealizarBuscaValidaPorUser" />
+    </UnitTest>
+    <UnitTest name="RealizarBuscaInvalidaPorQuestao" storage="c:\trivia\trivia\trivia.tests\bin\debug\netcoreapp3.1\trivia.tests.dll" id="f46d4173-d075-9e48-209e-e39b35e7d887">
+      <Execution id="a5458867-09d9-4240-81a7-94716988c643" />
+      <TestMethod codeBase="C:\Trivia\Trivia\Trivia.Tests\bin\Debug\netcoreapp3.1\Trivia.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Trivia.Tests.BuscanoBancodeQuestoesFeature" name="RealizarBuscaInvalidaPorQuestao" />
+    </UnitTest>
+    <UnitTest name="RealizarBuscaInvalidaPorCategoria" storage="c:\trivia\trivia\trivia.tests\bin\debug\netcoreapp3.1\trivia.tests.dll" id="894a6627-f6d2-4442-c2b8-73842cb38d7d">
+      <Execution id="dcf494b0-e96a-4ded-b2aa-20fa6f6b3dca" />
+      <TestMethod codeBase="C:\Trivia\Trivia\Trivia.Tests\bin\Debug\netcoreapp3.1\Trivia.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Trivia.Tests.BuscanoBancodeQuestoesFeature" name="RealizarBuscaInvalidaPorCategoria" />
+    </UnitTest>
+    <UnitTest name="RealizarBuscaInvalidaPorUser" storage="c:\trivia\trivia\trivia.tests\bin\debug\netcoreapp3.1\trivia.tests.dll" id="7bec5a10-6b62-b26f-8858-a50919e2bd33">
+      <Execution id="809d738b-db94-40b5-84e4-14246e9a5043" />
+      <TestMethod codeBase="C:\Trivia\Trivia\Trivia.Tests\bin\Debug\netcoreapp3.1\Trivia.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Trivia.Tests.BuscanoBancodeQuestoesFeature" name="RealizarBuscaInvalidaPorUser" />
+    </UnitTest>
+    <UnitTest name="RealizarBuscaValidaPorQuestao" storage="c:\trivia\trivia\trivia.tests\bin\debug\netcoreapp3.1\trivia.tests.dll" id="b319a383-a4b1-f244-1fc0-155500f76cc8">
+      <Execution id="070de1e5-237b-42b2-af1b-e89a6f4b9679" />
+      <TestMethod codeBase="C:\Trivia\Trivia\Trivia.Tests\bin\Debug\netcoreapp3.1\Trivia.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Trivia.Tests.BuscanoBancodeQuestoesFeature" name="RealizarBuscaValidaPorQuestao" />
+    </UnitTest>
+    <UnitTest name="RealizarContagemDeListagem" storage="c:\trivia\trivia\trivia.tests\bin\debug\netcoreapp3.1\trivia.tests.dll" id="b2616756-0a0f-bc32-24a6-eb7ac958bedc">
+      <Execution id="185d2482-1ec1-4bc8-8f98-bacf55937915" />
+      <TestMethod codeBase="C:\Trivia\Trivia\Trivia.Tests\bin\Debug\netcoreapp3.1\Trivia.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Trivia.Tests.BuscanoBancodeQuestoesFeature" name="RealizarContagemDeListagem" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="894a6627-f6d2-4442-c2b8-73842cb38d7d" executionId="dcf494b0-e96a-4ded-b2aa-20fa6f6b3dca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f46d4173-d075-9e48-209e-e39b35e7d887" executionId="a5458867-09d9-4240-81a7-94716988c643" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7bec5a10-6b62-b26f-8858-a50919e2bd33" executionId="809d738b-db94-40b5-84e4-14246e9a5043" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="35d35759-0605-9f39-47eb-9c0852db69d4" executionId="d2505677-ac3b-42c2-a3d1-00fda1da6c5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="986e1f41-19f6-31a1-5168-cc5da7629a70" executionId="6296b773-1664-494e-8c97-2bd892b44140" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b2616756-0a0f-bc32-24a6-eb7ac958bedc" executionId="185d2482-1ec1-4bc8-8f98-bacf55937915" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b319a383-a4b1-f244-1fc0-155500f76cc8" executionId="070de1e5-237b-42b2-af1b-e89a6f4b9679" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="181b86bf-e851-9432-ddeb-ad6b3fd6f360" executionId="85fdd34b-d65c-491b-a43d-6463a5d10563" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados que não estão em uma lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos os resultados carregados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="8" executed="8" passed="0" failed="8" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 3.16.1.0: Test execution started&#xD;
+Running all tests in C:\Trivia\Trivia\Trivia.Tests\bin\Debug\netcoreapp3.1\Trivia.Tests.dll&#xD;
+   NUnit3TestExecutor converted 8 of 8 NUnit test cases&#xD;
+NUnit Adapter 3.16.1.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

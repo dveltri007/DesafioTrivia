@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="4d1b5d79-870e-4d7d-9083-315f3176b235" name="daniloveltri@TI-1354 2021-04-26 22:03:09" runUser="CLSOFTWARE\daniloveltri" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2021-04-26T22:03:09.9141012-03:00" queuing="2021-04-26T22:03:09.9141022-03:00" start="2021-04-26T22:03:08.9007623-03:00" finish="2021-04-26T22:03:09.9152160-03:00" />
+  <TestSettings name="default" id="2c657013-242d-45d2-a9f6-e804def095e5">
+    <Deployment runDeploymentRoot="daniloveltri_TI-1354_2021-04-26_22_03_09" />
+  </TestSettings>
+  <TestLists>
+    <TestList name="Resultados que não estão em uma lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos os resultados carregados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="0" executed="0" passed="0" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 3.16.1.0: Test execution started&#xD;
+Running all tests in C:\Trivia\Trivia\Trivia\bin\Debug\netcoreapp3.1\Infrastructure.dll&#xD;
+   NUnit3TestExecutor converted 0 of 0 NUnit test cases&#xD;
+NUnit Adapter 3.16.1.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="TI-1354" outcome="Warning" timestamp="2021-04-26T22:03:09.8095591-03:00">
+        <Text>Não há nenhum teste disponível em C:\Trivia\Trivia\Trivia\bin\Debug\netcoreapp3.1\Infrastructure.dll. Verifique se o detector e os executores de teste estão registrados e se as configurações de versão da estrutura da plataforma &amp; são apropriadas e tente novamente.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>
